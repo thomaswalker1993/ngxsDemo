@@ -1,5 +1,5 @@
-import { BiggerStoreComponent } from './bigger-store/bigger-store.component';
 import { StoreArraysComponent } from './store-arrays/store-arrays.component';
+import { BiggerStoreComponent } from './bigger-store/bigger-store.component';
 import { SimpleStoreComponent } from './simple-store/simple-store.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

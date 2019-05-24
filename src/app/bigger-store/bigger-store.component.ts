@@ -79,13 +79,13 @@ export class BiggerStoreAnimalsState {
     });
   }
 
-  @Action(UpdateBiggerStorePlacePatch)
-  updateBiggerStorePlacePatch(ctx: StateContext<BiggerStoreAnimalStateModel>, action: UpdateBiggerStorePlacePatch) {
-    // Patch state is the alternative to set state and makes the code cleaner when you
-    // just want to modify parts of the state model
-    ctx.patchState({
-      place: action.place
-    });
-  }
+  // @Action(UpdateBiggerStorePlacePatch)
+  // updateBiggerStorePlacePatch(ctx: StateContext<BiggerStoreAnimalStateModel>, action: UpdateBiggerStorePlacePatch) {
+  //   // Patch state is the alternative to set state and makes the code cleaner when you
+  //   // just want to modify parts of the state model
+  //   ctx.patchState({
+  //     place: action.place
+  //   });
+  // }
 
 }

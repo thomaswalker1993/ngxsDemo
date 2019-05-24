@@ -15,6 +15,12 @@ export class SimpleAnimalStateModel {
   }
 })
 
+// All actions that you use above need to be defined with any parameters included in the constructor
+export class AddAnimal {
+  static readonly type = '[Animal] Add Animal';
+  constructor(public name: string) {}
+}
+
 // This class describes what you can do with that state
 export class SimpleAnimalsState {
 
@@ -35,18 +41,11 @@ export class SimpleAnimalsState {
 
 }
 
-// All actions that you use above need to be defined with any parameters included in the constructor
-export class AddAnimal {
-  static readonly type = '[Animal] Add Animal';
-  constructor(public name: string) {}
-}
-
 @Component({
   selector: 'app-simple-store',
   templateUrl: './simple-store.component.html',
   styleUrls: ['./simple-store.component.scss']
 })
-
 export class SimpleStoreComponent {
 
   constructor(private store: Store) {}
@@ -57,5 +56,8 @@ export class SimpleStoreComponent {
     this.store.dispatch(new AddAnimal(name));
   }
 }
+
+
+
 
 
