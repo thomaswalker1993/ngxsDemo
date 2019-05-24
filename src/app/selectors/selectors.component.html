@@ -1,0 +1,10 @@
+<button (click)="addAnimal('dog')">Add Dog to Store</button>
+<button (click)="addAnimal('cat')">Add Cat to Store</button>
+
+<div *ngIf="(animalState$ | async) as animal">
+  <div>
+    {{animal}}
+  </div>
+</div>
+
+<a routerLink="/selectorTwo">Next</a>
